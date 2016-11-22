@@ -288,6 +288,13 @@
     "comment": "CouchDB documentation references an additional request object field (new_edits)."
   },
   {
+    "endpoint": "/{db}/_bulk_get",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB"],
+    "summary": "Get multiple documents in a single request.",
+    "comment": ""
+  },
+  {
     "endpoint": "/{db}/_changes",
     "method": "GET",
     "database": ["Cloudant", "CouchDB"],
