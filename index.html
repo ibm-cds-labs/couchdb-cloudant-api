@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cloudant &#215; CouchDB 2.0 API Reference</title>
+
+    <link rel="stylesheet" href="css/api-ref.css" type="text/css">
+
+    <script src="js/vue.js"></script>
+    <script src="js/vue-resource.min.js"></script>
+    <script src="js/api-ref.js"></script>
+  </head>
+
+  <body>
+    <div id="api">
+        <div class="title">
+          <p>Cloudant | CouchDB 2.0</p>
+          <p>API Reference</p>
+        </div>
+        <div class="main">
+      <div class="left">
+          <div class="search">
+            <input type="search" placeholder="Search API" v-model="filteredText" v-on:input="refreshResources">
+          </div>
+          <ul class="filter">
+            <li>
+              <span>Database</span>
+              <ul>
+                <li v-for="db in apiDatabases" v-on:click="filterDatabase(db)">
+                  <span v-bind:class="{'selected': filteredDatabases.indexOf(db) > -1}">{{db}}</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>Method</span>
+              <ul>
+                <li v-for="meth in apiMethods" v-on:click="filterMethod(meth)">
+                  <span v-bind:class="{'selected': filteredMethod === meth}">{{meth}}</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+      <div class="right">
+        <div class="count">
+          <span>{{resources.length}} of {{total}}</span>
+        </div>
+        <div class="resources">
+          <ul>
+            <li v-for="resource in resources">
+              <div class="method">{{resource.method}}</div>
+              <div class="database">
+                <img v-for="db in apiDatabases" v-bind:src="'img/' + db + '.png'" alt="{{db}}" title="{{db}}" v-bind:class="{'nosupport': resource.database.indexOf(db) === -1, db: true}">
+              </div>
+              <div class="endpoint">{{resource.endpoint}}</div>
+              <div class="info">
+                <p class="summary">{{resource.summary}}</p>
+                <p class="comment" v-for="comment in resource.comment">{{{comment | highlight}}}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+        <div class="apilinks">
+          <a href="https://docs.cloudant.com/api.html" target="_blank">Cloudant API Reference</a>&nbsp; | &nbsp;
+          <a href="http://docs.couchdb.org/en/2.0.0/api/" target="_blank">CouchDB 2.0 API Reference</a>&nbsp; | &nbsp;
+          <a href="https://gist.github.com/vabarbosa/28fd0795b7e19d986453685408ce1516" target="_blank">This list in JSON</a>
+        </div>
+    </div>
+  </body>
+</html>

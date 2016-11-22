@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: apireference-${random-word}
+  name: cloudant-couchdb-api
+  memory: 8M
+  stack: cflinuxfs2

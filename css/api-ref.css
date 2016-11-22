@@ -1,0 +1,285 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  background-color: #19313F;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 125px;
+  z-index: 10;
+}
+
+.search {
+  background: #13242f none repeat scroll 0 0;
+  display: block;
+  padding: 15px 28px 25px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  border-bottom: 2px solid #aeaeae;
+  color: #f9f9fb;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 0 2px 0;
+  width: 100%;
+}
+
+.search input:focus {
+  border-color: #f9f9fb;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   font-weight: 300;
+}
+:-moz-placeholder {
+   font-style: italic;
+   font-weight: 300;
+}
+::-moz-placeholder {
+   font-style: italic;
+   font-weight: 300;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+   font-weight: 300;
+}
+
+.filter li {
+  list-style: none;
+  padding: 7px 0;
+}
+.filter > li > span:first-child {
+  display: block;
+  padding-bottom: 7px;
+  padding-left: 25px;
+}
+.filter > li:nth-child(2) > span:first-child {
+  margin-top: 15px;
+}
+.filter ul li {
+  border-left: 5px solid #19313F;
+  color: #AEAEAE;
+  cursor: pointer;
+  display: block;
+  padding-left: 40px;
+}
+.filter ul li:hover {
+  background-color: #13242F;
+  color: #FFFFFF;
+  border-color: #A6266E;
+}
+.filter ul span.selected {
+  color: #FFFFFF;
+}
+.filter ul span.selected:after {
+  color: #DB2780;
+  content: "\02713";
+  float: right;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.apilinks a {
+  color: #4178BE;
+  text-decoration: none;
+}
+.apilinks a:hover {
+  color: #264A60;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.title {
+  background-color: #a6266e;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 200;
+  left: 0;
+  padding: 24px 30px;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+.title p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.title a:hover {
+  color: #D6D6D6;
+  text-decoration: underline;
+}
+
+.count {
+  color: #d6d6d6;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.resources li {
+  background-color: #F9F9FB;
+  color: #777677;
+  list-style: outside none none;
+  margin: 50px 0;
+  padding: 30px;
+}
+.resources li:first-child {
+  margin-top: 0;
+}
+
+.database {
+  position: relative;
+  text-align: right;
+  top: -20px;
+}
+.database img {
+  height: 15px;
+  margin-left: 5px;
+}
+.database img.CouchDB {
+  height: 12px;
+}
+
+.method {
+  color: #19313f;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.endpoint {
+  color: #254A60;
+  font-size: 40px;
+  word-break: break-all;
+}
+
+.info {
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.summary {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+.comment {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 0 25px;
+}
+.comment b {
+  font-weight: 600;
+}
+
+.nosupport {
+  display: none;
+}
+
+.apilinks {
+  background-color: #f0f0f0;
+  bottom: 0;
+  color: #4178BE;
+  font-size: 12px;
+  left: 0;
+  padding: 15px 30px;
+  right: 0;
+  position: fixed;
+  text-align: right;
+  z-index: 5;
+}
+
+.right {
+  padding: 30px 75px;
+  margin-top: 125px;
+  z-index: 0;
+}
+
+.title {
+  z-index: 15;
+}
+
+@media screen and (min-width: 801px) {
+  .main {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .left {
+    bottom: 0;
+    float: left;
+    left: 0;
+    max-height: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    width: 325px;
+  }
+  .right {
+    position: relative;
+    margin-left: 325px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left {
+    margin-top: 94px;
+    width: 100%;
+  }
+  .right {
+    margin-top: 0;
+    padding: 30px;
+  }
+  .filter ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .filter ul span.selected::after {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .count {
+    font-size: 30px;
+  }
+  .apilinks {
+    text-align: left;
+  }
+}
