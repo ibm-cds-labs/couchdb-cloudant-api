@@ -718,7 +718,7 @@
     "endpoint": "/{db}/{docid}/{attname}",
     "method": "DELETE",
     "database": ["Cloudant", "CouchDB"],
-    "summary": "Delete the attachment attachment of the specified doc.",
+    "summary": "Delete the attachment associated with the specified doc.",
     "comment": ""
   }
 ]
