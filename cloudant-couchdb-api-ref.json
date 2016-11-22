@@ -1,0 +1,724 @@
+
+[
+  {
+    "endpoint": "/",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Meta information about the cluster.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_active_tasks",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List running tasks.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_all_dbs",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List all the databases in the instance.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/api_keys",
+    "method": "POST",
+    "database": ["Cloudant"],
+    "summary": "Generate an API key.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/db/{db}/_security",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Who has permissions to read, write, and manage the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/db/{db}/_security",
+    "method": "PUT",
+    "database": ["Cloudant"],
+    "summary": "Modify who has permissions to read, write, and manage a database. Assign an API key.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/monitoring/{endpoint}",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Monitor a specific cluster aspect.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/user/config/cors",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Current CORS configuration.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/user/config/cors",
+    "method": "PUT",
+    "database": ["Cloudant"],
+    "summary": "Changes the CORS configuration.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/user/virtual_hosts",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "List all virtual hosts.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/user/virtual_hosts",
+    "method": "POST",
+    "database": ["Cloudant"],
+    "summary": "Create a virtual host.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_api/v2/user/virtual_hosts",
+    "method": "DELETE",
+    "database": ["Cloudant"],
+    "summary": "Delete a virtual host.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_config",
+    "method": "GET",
+    "database": ["CouchDB 1.6"],
+    "summary": "Get the server configuration.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_config/{section}",
+    "method": "GET",
+    "database": ["CouchDB 1.6"],
+    "summary": "Get the configuration for the specified section.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_config/{section}/{key}",
+    "method": "GET",
+    "database": ["CouchDB 1.6"],
+    "summary": "Get the configuration value of a specific key within a configuration section.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_config/{section}/{key}",
+    "method": "PUT",
+    "database": ["CouchDB 1.6"],
+    "summary": "Update a configuration value. The new value should be supplied in the request body in the corresponding JSON format.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_config/{section}/{key}",
+    "method": "DELETE",
+    "database": ["CouchDB 1.6"],
+    "summary": "Delete a configuration value.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_db_updates",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List all database events in the instance.",
+    "comment": "In Cloudant the endpoint is only available to dedicated customers. Its documentation references additional query params (limit, since, descending) and an additional feed type value (normal)\nFor CouchDB, its documentation references an additional feed type value (eventsource)"
+  },
+  {
+    "endpoint": "/_log",
+    "method": "GET",
+    "database": ["CouchDB 1.6"],
+    "summary": "Get the log. Equivalent to accessing the local log file of the corresponding instance.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_membership",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 2.0"],
+    "summary": "List the names of nodes in the cluster. Active clusters are indicated in the cluster_nodes field, while all_nodes has all nodes.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_replicate",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Request, configure, or stop, a replication operation.",
+    "comment": "Cloudant documentation references additional request body fields (selector, since_seq)."
+  },
+  {
+    "endpoint": "/_replicator",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Trigger a replication.",
+    "comment": "Cloudant documentation references additional request body fields (selector, since_seq)."
+  },
+  {
+    "endpoint": "/_replicator",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Trigger a replication.",
+    "comment": "Cloudant documentation references additional request body fields (selector, since_seq)."
+  },
+  {
+    "endpoint": "/_replicator",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Cancel an ongoing replication",
+    "comment": "Cloudant documentation references additional request body fields (selector, since_seq)."
+  },
+  {
+    "endpoint": "/_restart",
+    "method": "POST",
+    "database": ["CouchDB 1.6"],
+    "summary": "Restart the instance. You must be authenticated as a user with administration privileges.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_search_analyze",
+    "method": "POST",
+    "database": ["Cloudant"],
+    "summary": "Test the results of analyzer tokenization by posting sample data.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_session",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Returns information about the authenticated user.",
+    "comment": "CouchDB documentation references an additional query param (basic)."
+  },
+  {
+    "endpoint": "/_session",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Initiate a new session for the specified user credentials. Cookie based user login.",
+    "comment": "CouchDB documentation references an additional query param (next)."
+  },
+  {
+    "endpoint": "/_session",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Closes user’s session. Logout cookie based user.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_stats",
+    "method": "GET",
+    "database": ["CouchDB 1.6"],
+    "summary": "Return the statistics for the running server.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_utils",
+    "method": "GET",
+    "database": ["CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Access the built-in Fauxton administration interface.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/_uuids",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Request one or more Universally Unique Identifiers (UUIDs).",
+    "comment": ""
+  },
+  {
+    "endpoint": "/favicon.ico",
+    "method": "GET",
+    "database": ["CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get the binary content for the favicon.ico site icon.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}",
+    "method": "HEAD",
+    "database": ["CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the HTTP Headers containing a minimal amount of information about the specified database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get information about the specified database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create a new document in the specified database, using the supplied JSON document structure.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create a new database.",
+    "comment": "Database names must start with a lowercase letter and contain only the following characters: Lowercase characters (a-z), Digits (0-9), Any of the characters _, $, (, ), +, -, and /"
+  },
+  {
+    "endpoint": "/{db}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete the specified database, and all the documents and attachments contained within it.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_all_docs",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List all the documents in a database.",
+    "comment": "CouchDB documentation references additional query params (end_key, endkey_docid, end_key_doc_id, stale, start_key, startkey_docid, start_key_doc_id, update_seq)."
+  },
+  {
+    "endpoint": "/{db}/_all_docs",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List all the documents in a database.",
+    "comment": "CouchDB documentation references additional query params (end_key, endkey_docid, end_key_doc_id, stale, start_key, startkey_docid, start_key_doc_id, update_seq)."
+  },
+  {
+    "endpoint": "/{db}/_bulk_docs",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create and update multiple documents at the same time within a single request.",
+    "comment": "CouchDB documentation references an additional request object field (new_edits)."
+  },
+  {
+    "endpoint": "/{db}/_bulk_get",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get multiple documents in a single request.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_changes",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List of changes made to documents in the database, including insertions, updates, and deletions.",
+    "comment": "CouchDB includes query params (attachments, att_encoding_info, last-event-id, view). Also filtering using a selector is new in CouchDB 2.0."
+  },
+  {
+    "endpoint": "/{db}/_changes",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List of changes made to documents in the database, including insertions, updates, and deletions.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_compact",
+    "method": "POST",
+    "database": ["CouchDB 1.6"],
+    "summary": "Request compaction of the specified database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_compact/{ddoc}",
+    "method": "POST",
+    "database": ["CouchDB 1.6"],
+    "summary": "Compact the view indexes associated with the specified design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}",
+    "method": "HEAD",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the HTTP Headers containing a minimal amount of information about the specified design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get the contents of the design document specified with the name of the design document and from the specified database from the URL.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create a new named design document or create a new revision of the existing design document.",
+    "comment": "Cloudant documentation references an additional request body field (indexes)\nCouchDB documentation references additional request body fields (language, options)."
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete the specified document from the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}",
+    "method": "COPY",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Copy an existing design document to a new or existing one.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_geo_info/{index}",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Obtain information about a geospatial index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_geo/{index}",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Query a geo index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_info",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Obtain information about the specified design document, including the index, index size, and current status of the design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{other-ddoc}/{view}",
+    "method": "GET",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the list function for the view function from the other design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{other-ddoc}/{view}",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the list function for the view function from the other design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{view}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the list function for the view function from the same design document.",
+    "comment": "The result of a list function is not stored. This means that the function is executed every time a request is made."
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{view}",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the list function for the view function from the same design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_rewrite/{path}",
+    "method": "ANY",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Rewrite the specified path by rules defined in the specified design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_search_info/{index}",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Obtain information about a search specified within a given design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_search/{index}",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Query an index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_search/{index}",
+    "method": "POST",
+    "database": ["Cloudant"],
+    "summary": "Query an index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_show/{func}",
+    "method": "GET",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the show function for null document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_show/{func}",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the show function for null document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_show/{func}/{docid}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the show function for the specified document.",
+    "comment": "The result of a show function is not stored. This means that the function is executed every time a request is made."
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_show/{func}/{docid}",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Apply the show function for the specified document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_update/{func}",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Execute the update function on server side for null document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_update/{func}/{docid}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Execute the update function on server side for the specified document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_view/{view}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Execute the view function from the specified design document.",
+    "comment": "CouchDB documentation references additional query params (conflicts, end_key, end_key_doc_id, attachments, att_encoding_info, sorted, start_key, start_key_doc_id, update_seq). CouchDB 2.0 added sorted parameter not available in CouchDB 1.6."
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/_view/{view}",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 2.0"],
+    "summary": "Execute the view function from the specified design document.",
+    "comment": "CouchDB documentation references additional query params (conflicts, end_key, end_key_doc_id, attachments, att_encoding_info, sorted, start_key, start_key_doc_id, update_seq)."
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/{attname}",
+    "method": "HEAD",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the HTTP headers containing a minimal amount of information about the specified attachment.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/{attname}",
+    "method": "GET",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the file attachment associated with the design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/{attname}",
+    "method": "PUT",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Upload the supplied content as an attachment to the specified design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_design/{ddoc}/{attname}",
+    "method": "DELETE",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete the attachment of the specified design document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_ensure_full_commit",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Commit any recent changes to the specified database to disk.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_explain",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Identify which index is being used by a particular query.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_find",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Find documents using a declarative JSON querying syntax.",
+    "comment": "Cloudant documentation references additional request body fields (r, bookmark)"
+  },
+  {
+    "endpoint": "/{db}/_index",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "List indexes.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_index",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create a new index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_index/_design/{ddoc}/{type}/{name}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete an index.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_local/{docid}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get the specified local document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_local/{docid}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Store the specified local document.",
+    "comment": "Local documents are not replicated to other databases."
+  },
+  {
+    "endpoint": "/{db}/_local/{docid}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete the specified local document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_local/{docid}",
+    "method": "COPY",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Copy the specified local document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_missing_revs",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Return the document revisions from the given list that do not exist in the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_missing_revs",
+    "method": "POST",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the document revisions from the given list that do not exist in the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_purge",
+    "method": "POST",
+    "database": ["CouchDB 1.6"],
+    "summary": "Remove the references to deleted documents from the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_revs_diff",
+    "method": "POST",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Given a set of document/revision IDs, return the subset of those that do not correspond to revisions stored in the database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_revs_limit",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Get the number of document revisions tracked.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_revs_limit",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Set the maximum number of document revisions tracked.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_security",
+    "method": "GET",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the current security object from the specified database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_security",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Set the security object for the given database.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_shards",
+    "method": "GET",
+    "database": ["Cloudant"],
+    "summary": "Return information about the shards in the cluster",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/_view_cleanup",
+    "method": "POST",
+    "database": ["CouchDB 1.6"],
+    "summary": "Remove view index files that are no longer required by as a result of changed views within design documents.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}",
+    "method": "HEAD",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the HTTP Headers containing a minimal amount of information about the specified document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the document specified by the docid from the specified db.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Create a new named document or create a new revision of the existing document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Mark the specified document as deleted.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}",
+    "method": "COPY",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Copy an existing document to a new or existing document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}/{attname}",
+    "method": "HEAD",
+    "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the HTTP headers containing a minimal amount of information about the specified attachment.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}/{attname}",
+    "method": "GET",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Return the file attachment associated with the document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}/{attname}",
+    "method": "PUT",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Upload the supplied content as an attachment to the specified document.",
+    "comment": ""
+  },
+  {
+    "endpoint": "/{db}/{docid}/{attname}",
+    "method": "DELETE",
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "summary": "Delete the attachment associated with the specified doc.",
+    "comment": ""
+  }
+]
