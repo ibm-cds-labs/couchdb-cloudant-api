@@ -124,7 +124,7 @@
     "method": "GET",
     "database": ["Cloudant", "CouchDB"],
     "summary": "List all database events in the instance.",
-    "comment": "In Cloudant the endpoint is only available to dedicated customers. Its documentations references additional query params (limit, since, descending) and an additional feed type value (normal)\nFor CouchDB, its documentations references an additional feed type value (eventsource)"
+    "comment": "In Cloudant the endpoint is only available to dedicated customers. Its documentation references additional query params (limit, since, descending) and an additional feed type value (normal)\nFor CouchDB, its documentation references an additional feed type value (eventsource)"
   },
   {
     "endpoint": "/_log",
@@ -689,7 +689,7 @@
   {
     "endpoint": "/{db}/{docid}/{attname}",
     "method": "HEAD",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the HTTP headers containing a minimal amount of information about the specified attachment.",
     "comment": ""
   },
