@@ -325,7 +325,7 @@
   {
     "endpoint": "/{db}/_design/{ddoc}",
     "method": "HEAD",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the HTTP Headers containing a minimal amount of information about the specified design document.",
     "comment": ""
   },
@@ -381,14 +381,14 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{other-ddoc}/{view}",
     "method": "GET",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the list function for the view function from the other design document.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{other-ddoc}/{view}",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the list function for the view function from the other design document.",
     "comment": ""
   },
@@ -402,7 +402,7 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/_list/{func}/{view}",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the list function for the view function from the same design document.",
     "comment": ""
   },
@@ -437,14 +437,14 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/_show/{func}",
     "method": "GET",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the show function for null document.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_design/{ddoc}/_show/{func}",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the show function for null document.",
     "comment": ""
   },
@@ -458,7 +458,7 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/_show/{func}/{docid}",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Apply the show function for the specified document.",
     "comment": ""
   },
@@ -493,35 +493,35 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/{attname}",
     "method": "HEAD",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the HTTP headers containing a minimal amount of information about the specified attachment.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_design/{ddoc}/{attname}",
     "method": "GET",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the file attachment associated with the design document.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_design/{ddoc}/{attname}",
     "method": "PUT",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Upload the supplied content as an attachment to the specified design document.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_design/{ddoc}/{attname}",
     "method": "DELETE",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Delete the attachment of the specified design document.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_ensure_full_commit",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Commit any recent changes to the specified database to disk.",
     "comment": ""
   },
@@ -584,7 +584,7 @@
   {
     "endpoint": "/{db}/_local/{docid}",
     "method": "COPY",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Copy the specified local document.",
     "comment": ""
   },
@@ -598,7 +598,7 @@
   {
     "endpoint": "/{db}/_missing_revs",
     "method": "POST",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the document revisions from the given list that do not exist in the database.",
     "comment": ""
   },
@@ -633,7 +633,7 @@
   {
     "endpoint": "/{db}/_security",
     "method": "GET",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the current security object from the specified database.",
     "comment": ""
   },
@@ -661,7 +661,7 @@
   {
     "endpoint": "/{db}/{docid}",
     "method": "HEAD",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Return the HTTP Headers containing a minimal amount of information about the specified document.",
     "comment": ""
   },
@@ -689,7 +689,7 @@
   {
     "endpoint": "/{db}/{docid}",
     "method": "COPY",
-    "database": ["CouchDB"],
+    "database": ["Cloudant","CouchDB"],
     "summary": "Copy an existing document to a new or existing document.",
     "comment": ""
   },
