@@ -1,5 +1,5 @@
 (function() {
-  var apiFileUrl = 'https://gist.githubusercontent.com/vabarbosa/28fd0795b7e19d986453685408ce1516/raw/cloudant-couchdb-api.json'
+  var apiFileUrl = 'https://raw.githubusercontent.com/ibm-cds-labs/couchdb-cloudant-api/master/cloudant-couchdb-api.json'
   var apiResources = []
 
   var scrollUp = function() {
