@@ -486,7 +486,7 @@
   {
     "endpoint": "/{db}/_design/{ddoc}/_view/{view}",
     "method": "POST",
-    "database": ["Cloudant", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
     "summary": "Execute the view function from the specified design document.",
     "comment": "CouchDB documentation references additional query params (conflicts, end_key, end_key_doc_id, attachments, att_encoding_info, sorted, start_key, start_key_doc_id, update_seq)."
   },
