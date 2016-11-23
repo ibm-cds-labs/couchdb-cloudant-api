@@ -7,7 +7,7 @@ This repository contains a [consolidated list](https://github.com/ibm-cds-labs/c
 
 ## To Err is Human
 
-Please do submit [issues](https://github.com/ibm-cds-labs/couchdb-cloudant-api/issues) or better yet, [pull requests](https://github.com/ibm-cds-labs/couchdb-cloudant-api/pulls) for any descrepancies you may find or corrections and updates you may have to improve this content. The more accurate this information the better served the community will be.
+Please do submit [issues](https://github.com/ibm-cds-labs/couchdb-cloudant-api/issues) or better yet, [pull requests](https://github.com/ibm-cds-labs/couchdb-cloudant-api/pulls) for any discrepancies you may find or corrections and updates you may have to improve this content. The more accurate this information the better served the community will be.
 
 ## In the Wild
 
