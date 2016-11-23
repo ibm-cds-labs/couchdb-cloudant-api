@@ -290,7 +290,7 @@
   {
     "endpoint": "/{db}/_bulk_get",
     "method": "POST",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Get multiple documents in a single request.",
     "comment": ""
   },
