@@ -640,7 +640,7 @@
   {
     "endpoint": "/{db}/_shards",
     "method": "GET",
-    "database": ["Cloudant"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Return information about the shards in the cluster",
     "comment": ""
   },
