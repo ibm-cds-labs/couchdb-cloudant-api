@@ -590,13 +590,6 @@
   },
   {
     "endpoint": "/{db}/_missing_revs",
-    "method": "GET",
-    "database": ["Cloudant"],
-    "summary": "Return the document revisions from the given list that do not exist in the database.",
-    "comment": ""
-  },
-  {
-    "endpoint": "/{db}/_missing_revs",
     "method": "POST",
     "database": ["Cloudant","CouchDB 1.6", "CouchDB 2.0"],
     "summary": "Return the document revisions from the given list that do not exist in the database.",
