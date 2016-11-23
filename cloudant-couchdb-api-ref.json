@@ -234,7 +234,7 @@
   {
     "endpoint": "/{db}",
     "method": "HEAD",
-    "database": ["CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
     "summary": "Return the HTTP Headers containing a minimal amount of information about the specified database.",
     "comment": ""
   },
