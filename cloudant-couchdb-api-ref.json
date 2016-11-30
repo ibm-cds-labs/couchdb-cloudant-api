@@ -528,35 +528,35 @@
   {
     "endpoint": "/{db}/_explain",
     "method": "POST",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Identify which index is being used by a particular query.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_find",
     "method": "POST",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Find documents using a declarative JSON querying syntax.",
     "comment": "Cloudant documentation references additional request body fields (r, bookmark)"
   },
   {
     "endpoint": "/{db}/_index",
     "method": "GET",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "List indexes.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_index",
     "method": "POST",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Create a new index.",
     "comment": ""
   },
   {
     "endpoint": "/{db}/_index/_design/{ddoc}/{type}/{name}",
     "method": "DELETE",
-    "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
+    "database": ["Cloudant", "CouchDB 2.0"],
     "summary": "Delete an index.",
     "comment": ""
   },
