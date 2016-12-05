@@ -6,7 +6,7 @@
     "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
     "summary": "Meta information about the cluster.",
     "comment": "",
-    "links": ["https://docs.cloudant.com/advanced.html#get-/", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#"]
+    "links": ["https://docs.cloudant.com/advanced.html#get-/", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#get--", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#get--"]
   },
   {
     "endpoint": "/_active_tasks",
@@ -14,7 +14,7 @@
     "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
     "summary": "List running tasks.",
     "comment": "",
-    "links": ["https://docs.cloudant.com/active_tasks.html#active-tasks", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#active-tasks", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#active-tasks"]
+    "links": ["https://docs.cloudant.com/active_tasks.html#active-tasks", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#get--_active_tasks", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#get--_active_tasks"]
   },
   {
     "endpoint": "/_all_dbs",
@@ -22,7 +22,7 @@
     "database": ["Cloudant", "CouchDB 1.6", "CouchDB 2.0"],
     "summary": "List all the databases in the instance.",
     "comment": "",
-    "links": ["https://docs.cloudant.com/database.html#get-databases", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#all-dbs", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#all-dbs"]
+    "links": ["https://docs.cloudant.com/database.html#get-databases", "http://docs.couchdb.org/en/1.6.0/api/server/common.html#get--_all_dbs", "http://docs.couchdb.org/en/2.0.0/api/server/common.html#get--_all_dbs"]
   },
   {
     "endpoint": "/_api/v2/api_keys",

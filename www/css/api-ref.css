@@ -207,17 +207,18 @@ body {
   margin: 20px 0;
 }
 .links .link {
-  margin: 0;
-  padding: 0 30px;
+  list-style: initial;
+  margin: 0 0 0 20px;
+  padding: 0;
 }
 .links .link > a {
-  color: #a6266e;
-  font-size: 15px;
+  color: #777677;
+  font-size: 14px;
   font-weight: 300;
   text-decoration: none;
 }
 .links .link > a:hover {
-  color: #19313f;
+  color: #000000;
   text-decoration: underline;
 }
 
