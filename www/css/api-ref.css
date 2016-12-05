@@ -190,18 +190,35 @@ body {
 
 .summary {
   font-size: 15px;
+  font-weight: 500;
   letter-spacing: 0.5px;
-  margin-bottom: 25px;
 }
 
 .comment {
   display: block;
   font-size: 14px;
   letter-spacing: 0.5px;
-  padding: 0 25px;
 }
 .comment b {
   font-weight: 600;
+}
+
+.links {
+  margin: 20px 0;
+}
+.links .link {
+  margin: 0;
+  padding: 0 30px;
+}
+.links .link > a {
+  color: #a6266e;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.links .link > a:hover {
+  color: #19313f;
+  text-decoration: underline;
 }
 
 .nosupport {

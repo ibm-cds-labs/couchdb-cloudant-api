@@ -59,6 +59,11 @@
               <div class="endpoint">{{resource.endpoint}}</div>
               <div class="info">
                 <p class="summary">{{resource.summary}}</p>
+                <ul class="links">
+                  <li class="link" v-for="link in resource.links">
+                    <a href="{{link}}" target="_blank">{{link}}</a>
+                  </li>
+                </ul>
                 <p class="comment" v-for="comment in resource.comment">{{{comment | highlight}}}</p>
               </div>
             </li>
